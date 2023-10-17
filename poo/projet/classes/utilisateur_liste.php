@@ -5,9 +5,9 @@ include("../classes/Utilisateur.php");
 // Récupérez la liste des utilisateurs
 $utilisateurs = Utilisateur::get_liste($bdd);
 
-// Affichez la liste des utilisateurs sous forme de tableau HTML
-?>
 
+?>
+ <!-- Affichez la liste des utilisateurs sous forme de tableau HTML -->
 <!DOCTYPE html>
 <html>
 <head>

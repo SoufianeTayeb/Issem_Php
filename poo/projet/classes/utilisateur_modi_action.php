@@ -7,7 +7,7 @@ if (isset($_GET['id'])) {
     $u = Utilisateur::get_un($bdd, $id);
     if ($u) {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            // Le formulaire de modification a été soumis
+            
             $u->set_nom($_POST['nom']);
             $u->set_prenom($_POST['prenom']);
             $u->set_mail($_POST['mail']);
@@ -20,7 +20,7 @@ if (isset($_GET['id'])) {
                 echo "Erreur lors de la modification de l'utilisateur.";
             }
         } else {
-            // Affichez le formulaire de modification ici
+            
             ?>
             <!DOCTYPE html>
             <html>
