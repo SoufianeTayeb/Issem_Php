@@ -27,47 +27,7 @@ if (isset($_GET['id'])) {
 
             <head>
                 <title>Modifier un Utilisateur</title>
-                <style>
-                    body {
-                        font-family: Arial, sans-serif;
-                    }
-
-                    h2 {
-                        background-color: #007bff;
-                        color: white;
-                        padding: 10px;
-                    }
-
-                    form {
-                        width: 50%;
-                        margin: 0 auto;
-                    }
-
-                    label {
-                        display: block;
-                        margin-top: 10px;
-                    }
-
-                    input[type="text"],
-                    input[type="email"],
-                    input[type="password"] {
-                        width: 100%;
-                        padding: 10px;
-                        margin-top: 5px;
-                    }
-
-                    input[type="submit"] {
-                        background-color: #007bff;
-                        color: white;
-                        padding: 10px 20px;
-                        margin-top: 10px;
-                        cursor: pointer;
-                    }
-
-                    .center-button {
-                        text-align: center;
-                    }
-                </style>
+                <link rel="stylesheet" href="../Css/Style.css">
             </head>
 
             <body>

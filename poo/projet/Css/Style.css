@@ -1,0 +1,110 @@
+/* Reset CSS */
+html, body, div, h1, h2, h3, p, ul, li, form, label, table, input, th, td {
+   margin: 0;
+   padding: 0;
+   border: 0;
+ }
+ 
+ /* Global Styles */
+ body {
+   font-family: Arial, sans-serif;
+   background-color: #f0f0f0;
+ }
+ 
+ .container {
+   max-width: 400px;
+   margin: 0 auto;
+   padding: 20px;
+   background-color: #fff;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
+ }
+ 
+ /* Heading Styles */
+ h2 {
+   background-color: #007BFF;
+   color: #fff;
+   padding: 10px;
+   border-radius: 5px;
+   text-align: center;
+ }
+ 
+ /* Form Styles */
+ form {
+   margin: 20px 0;
+ }
+ 
+ label {
+   display: block;
+   font-weight: bold;
+   margin-top: 10px;
+ }
+ 
+ input[type="text"],
+ input[type="password"],
+ input[type="email"] {
+   width: 100%;
+   padding: 10px;
+   margin: 5px 0;
+   border: 1px solid #ccc;
+   border-radius: 3px;
+ }
+ 
+ input[type="text"] {
+   text-transform: uppercase;
+ }
+ 
+ input[type="text"]::placeholder {
+   text-transform: none;
+ }
+ 
+ input[type="password"]::placeholder {
+   font-weight: normal;
+ }
+ 
+ /* Button Styles */
+ input[type="submit"] {
+   background-color: #007BFF;
+   color: #fff;
+   border: none;
+   border-radius: 3px;
+   padding: 10px 20px;
+   cursor: pointer;
+ }
+ 
+ input[type="submit"]:hover {
+   background-color: #0056b3;
+ }
+ .center-button {
+   text-align: center;
+}  
+/* utilisateur_liste table style */
+table {
+   border-collapse: collapse;
+   width: 100%;
+}
+
+th,
+td {
+   border: 1px solid #ddd;
+   padding: 8px;
+   text-align: left;
+}
+
+th {
+   background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+   background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+   background-color: #fff;
+}
+
+a {
+   text-decoration: none;
+   color: #007bff;
+   margin-right: 10px;
+}

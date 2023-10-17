@@ -13,58 +13,7 @@ $utilisateurs = Utilisateur::get_liste($bdd);
 
 <head>
     <title>Liste des Utilisateurs</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        h2 {
-            background-color: #007bff;
-            color: white;
-            padding: 10px;
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        th,
-        td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-
-        tr:nth-child(odd) {
-            background-color: #fff;
-        }
-
-        a {
-            text-decoration: none;
-            color: #007bff;
-            margin-right: 10px;
-        }
-        input[type="submit"] {
-                        background-color: #007bff;
-                        color: white;
-                        padding: 10px 20px;
-                        margin-top: 10px;
-                        cursor: pointer;
-                    }
-
-                    .center-button {
-                        text-align: center;
-                    }
-    </style>
+    <link rel="stylesheet" href="../Css/Style.css">
 </head>
 
 <body>
