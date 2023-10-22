@@ -7,9 +7,9 @@ if (isset($_GET['id'])) {
     $u = Utilisateur::get_un($bdd, $id);
     if ($u) {
         if ($u->supprimer($bdd)) {
-            echo "Suppression de l'utilisateur OK.";
+            header("Location: utilisateur_liste.php?message=suppression de l'utilisateur OK");
         } else {
-            echo "Erreur lors de la suppression de l'utilisateur.";
+            header("Location: utilisateur_liste.php?message=Erreur lors de la supression de l'utilisateur");
         }
     } else {
         echo "Utilisateur introuvable.";
