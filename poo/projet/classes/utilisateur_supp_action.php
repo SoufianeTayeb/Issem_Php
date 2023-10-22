@@ -12,9 +12,9 @@ if (isset($_GET['id'])) {
             header("Location: utilisateur_liste.php?message=Erreur lors de la supression de l'utilisateur");
         }
     } else {
-        echo "Utilisateur introuvable.";
+        echo "Utilisateur introuvable";
     }
 } else {
-    echo "ID de l'utilisateur non spécifié.";
+    echo "ID de l'utilisateur non spécifié";
 }
 ?>
