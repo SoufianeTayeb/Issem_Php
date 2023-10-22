@@ -66,7 +66,7 @@
 
                 var formData = $(this).serialize();
                 console.log(formData);
-                // Send an AJAX POST request
+                // Envoyer un AJAX POST request
                 $.ajax({
                     type: "POST",
                     url: "utilisateur_ajout_action.php",
