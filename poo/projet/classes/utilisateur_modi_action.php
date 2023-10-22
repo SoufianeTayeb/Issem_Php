@@ -14,10 +14,15 @@ if (isset($_GET['id'])) {
             $u->set_mdp($_POST['mdp']);
             $u->set_d_naissance($_POST['d_naissance']);
 
+            // if ($u->modifier($bdd)) {
+            //     echo "Modification de l'utilisateur OK.";
+            // } else {
+            //     echo "Erreur lors de la modification de l'utilisateur.";
+            // }
             if ($u->modifier($bdd)) {
-                echo "Modification de l'utilisateur OK.";
+                header("Location: utilisateur_liste.php?message=Modification de l'utilisateur OK");
             } else {
-                echo "Erreur lors de la modification de l'utilisateur.";
+                header("Location: utilisateur_liste.php?message=Erreur lors de la modification de l'utilisateur");
             }
         } else {
 
@@ -46,8 +51,8 @@ if (isset($_GET['id'])) {
                     <form action="../admin/utilisateur_ajout.php"><input type="submit" value="Ajouter un nouveau utilisateur"></form>
                 </div>
                 <div class="center-button">
-         <form action="../classes/utilisateur_liste.php"><input type="submit" value="Retour à la liste des utilisateur"></form>
-         </div>
+                    <form action="../classes/utilisateur_liste.php"><input type="submit" value="Retour à la liste des utilisateur"></form>
+                </div>
             </body>
 
             </html>
